@@ -1,0 +1,29 @@
+Body:
+JSon
+{
+  "userId": "12345",
+  "restaurantId": "67890",
+  "items": [
+    {
+      "itemId": "111",
+      "quantity": 2
+    },
+    {
+      "itemId": "222",
+      "quantity": 1
+    }
+  ],
+  "deliveryAddress": "123 Main Street, City",
+  "paymentMethod": "Credit Card"
+}
+Response:
+{
+  "orderId": "abc123",
+  "status": "Order Placed",
+  "estimatedDeliveryTime": "30 mins",
+  "totalAmount": 250.75
+}
+Failure: 400 bad request 
+{
+  "error": "Invalid item ID or quantity"
+}
